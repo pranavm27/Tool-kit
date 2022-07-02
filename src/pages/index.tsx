@@ -141,7 +141,7 @@ const Index = () => {
             <Card
               title={'Integer base converter'}
               desc={
-                'Convert number between different bases (decimal, hexadecimal, binary, octal, base64, ...)
+                'Convert number between different bases (decimal, hexadecimal, binary, octal, base64, ...)'
               }
               anchor="tokenGenerators"
             />
