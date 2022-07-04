@@ -1,32 +1,105 @@
 // import { useRouter } from 'next/router';
 
-import { useTheme } from 'next-themes';
+import { useTheme } from "next-themes";
 
-import Card from '@/components/card/card';
-import { Meta } from '@/layouts/Meta';
-import { Main } from '@/templates/Main';
-import { AppConfig } from '@/utils/AppConfig';
+import Card from "@/components/card/card";
+import { Meta } from "@/layouts/Meta";
+import { Main } from "@/templates/Main";
+import { AppConfig } from "@/utils/AppConfig";
 
 const Index = () => {
-  // const router = useRouter();
-
   const { theme, setTheme } = useTheme();
+  const tools = [
+    {
+      title: "Token Generator",
+      anchor: "tokenGenerator",
+      desc: "Generate random string with the chars you want: uppercase or lowercase letters, numbers and/or symbols",
+    },
+    {
+      title: "Hash Text",
+      anchor: "hashText",
+      desc: "Hash a text string using the function you need : MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3 or RIPEMD160",
+    },
+    {
+      title: "UUIDs v4 generator",
+      desc: "A universally unique identifier (UUID) is a 128-bit number used to identify information in computer systems. The number of possible UUIDs is 16^32, which is 2^128 or about 3.4x10^38 (which is a lot !). ",
+      anchor: "uuidGenerator",
+    },
+    {
+      title: "Date Time Converter ",
+      desc: "Convert date and time into the various different formats",
+      anchor: "tokenGenerators",
+    },
+    {
+      title: "Integer base converter",
+      desc: "Convert number between different bases (decimal, hexadecimal, binary, octal, base64, ...)",
+      anchor: "tokenGenerators",
+    },
+    {
+      title: "Base64 converter",
+      desc: "Convert string, files or images into a it's base64 representation.",
+      anchor: "tokenGenerators",
+    },
+    {
+      title: "Color converter",
+      desc: "Convert color between the different formats (hex, rgb, hsl and css name)",
+      anchor: "tokenGenerators",
+    },
+    {
+      title: "Case converter",
+      desc: "Change the case of a string and chose between different formats",
+      anchor: "tokenGenerators",
+    },
+    {
+      title: "Encode/decode url formatted strings",
+      desc: 'Encode to url-encoded format (also known as "percent-encoded") or decode from it.',
+      anchor: "tokenGenerators",
+    },
+    {
+      title: "Url parser",
+      desc: "Parse an url string to get all the different parts (protocol, origin, params, port, username-password, ...)",
+      anchor: "tokenGenerators",
+    },
+    {
+      title: "Url parser",
+      desc: "Parse an url string to get all the different parts (protocol, origin, params, port, username-password, ...)",
+      anchor: "tokenGenerators",
+    },
+    {
+      title: "Escape html entities",
+      desc: "Escape or unescape html entities (replace <,>, &, \" and ' to their html version)",
+      anchor: "tokenGenerators",
+    },
+    {
+      title: "Device information",
+      desc: "Get information about your current device (screen size, pixel-ratio, user agent, ...)",
+      anchor: "tokenGenerators",
+    },
+    {
+      title: "Git cheatsheet",
+      desc: "Git is a decentralized version management software. With this cheatsheet you will have a quick access to the most common git commands.",
+      anchor: "tokenGenerators",
+    },
+    {
+      title: "Random port generator",
+      desc: 'Generate random port numbers outside of the range of "known" ports (0-1023).',
+      anchor: "tokenGenerators",
+    },
+    {
+      title: "Crontab generator",
+      desc: "Validate and generate crontab and get the human readable description of the cron schedule. ",
+      anchor: "tokenGenerators",
+    },
 
+  ];
   return (
-    <Main
-      meta={
-        <Meta
-          title="Tool-kit Home"
-          description="AppConfig."
-        />
-      }
-    >
+    <Main meta={<Meta title="Tool-kit Home" description="AppConfig." />}>
       <div className="">
         {/* switch themes  */}
         <div>
           <h1>
             <button
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +115,7 @@ const Index = () => {
                   d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
                 />
               </svg>
-            </button>{' '}
+            </button>{" "}
           </h1>
         </div>
         <div className=" ">
@@ -99,210 +172,18 @@ const Index = () => {
       </div>
       <br />
       <div className="grid grid-cols-4 gap-4">
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Token Generator'}
-              desc={
-                'Generate random string with the chars you want: uppercase or lowercase letters, numbers and/or symbols'
-              }
-              anchor="tokenGenerator"
-            />
-          </>
-        </div>
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Hash Text'}
-              desc={
-                'Hash a text string using the function you need : MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3 or RIPEMD160'
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Date Time Converter '}
-              desc={
-                'Convert date and time into the various different formats'
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Integer base converter'}
-              desc={
-                'Convert number between different bases (decimal, hexadecimal, binary, octal, base64, ...)'
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Base64 converter'}
-              desc={
-                "Convert string, files or images into a it's base64 representation."
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Color converter'}
-              desc={
-                'Convert color between the different formats (hex, rgb, hsl and css name)'
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Case converter'}
-              desc={
-                'Change the case of a string and chose between different formats'
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Encode/decode url formatted strings'}
-              desc={
-                'Encode to url-encoded format (also known as "percent-encoded") or decode from it.'
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Url parser'}
-              desc={
-                'Parse an url string to get all the different parts (protocol, origin, params, port, username-password, ...)'
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Url parser'}
-              desc={
-                'Parse an url string to get all the different parts (protocol, origin, params, port, username-password, ...)'
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Escape html entities'}
-              desc={
-                'Escape or unescape html entities (replace <,>, &, " and \' to their html version)'
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Device information'}
-              desc={
-                'Get information about your current device (screen size, pixel-ratio, user agent, ...)'
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Git cheatsheet'}
-              desc={
-                'Git is a decentralized version management software. With this cheatsheet you will have a quick access to the most common git commands.'
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Random port generator'}
-              desc={
-                'Generate random port numbers outside of the range of "known" ports (0-1023).'
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'Crontab generator'}
-              desc={
-                'Validate and generate crontab and get the human readable description of the cron schedule. '
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-
-        <div>
-          {' '}
-          <>
-            <Card
-              title={'UUIDs v4 generator'}
-              desc={
-                'A universally unique identifier (UUID) is a 128-bit number used to identify information in computer systems. The number of possible UUIDs is 16^32, which is 2^128 or about 3.4x10^38 (which is a lot !). '
-              }
-              anchor="tokenGenerators"
-            />
-          </>
-        </div>
-
-
-        <div className="border-t border-gray-300 py-8 text-center text-sm">
+        {tools.map((item) => {
+          return (
+            <Card title={item.title} desc={item.desc} anchor={item.anchor} />
+          );
+        })}
+   
+        {/* <div className="border-t border-gray-300 py-8 text-center text-sm">
           © Copyright {new Date().getFullYear()} {AppConfig.title}. Powered with{' '}
           <span role="img" aria-label="Love">
             ♥
           </span>{' '}
-        </div>
-        
+        </div> */}
       </div>
     </Main>
   );

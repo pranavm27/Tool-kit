@@ -14,14 +14,14 @@ const SideBar = () => {
       <div className="-mx-2 mt-6 flex flex-col items-center">
         <img
           className="mx-2 h-24 w-24 rounded-full object-cover"
-          src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+          src="https://media-exp2.licdn.com/dms/image/C5603AQGbh8ubNAro8g/profile-displayphoto-shrink_800_800/0/1632732895011?e=1661990400&v=beta&t=i8HX59K0SeWueOXsqLDIOIwsre6NjZ7iJX5Yj4CR-lI"
           alt="avatar"
         />
         <h4 className="mx-2 mt-2 font-medium text-gray-800 hover:underline dark:text-gray-400">
-          John Doe
+          Pranav M
         </h4>
         <p className="mx-2 mt-1 text-sm font-medium text-gray-600 hover:underline dark:text-gray-400">
-          john@example.com
+          m.pranav@ymail.com
         </p>
       </div>
 
