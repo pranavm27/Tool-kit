@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 // import { ClipboardCopyIcon } from "@heroicons/react/solid";
 var CryptoJS = require("crypto-js");
 
-const tokenGeneratorComponent = () => {
+const hasText = () => {
   const generateCypherText = (cypher: any) => {
     return (
       <div className="mt-1 relative rounded-md shadow-sm">
@@ -91,4 +91,4 @@ const tokenGeneratorComponent = () => {
   );
 };
 
-export default tokenGeneratorComponent;
+export default hasText;

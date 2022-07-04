@@ -26,70 +26,71 @@ const Index = () => {
       anchor: "uuidGenerator",
     },
     {
-      title: "Date Time Converter ",
-      desc: "Convert date and time into the various different formats",
-      anchor: "tokenGenerators",
-    },
-    {
       title: "Integer base converter",
       desc: "Convert number between different bases (decimal, hexadecimal, binary, octal, base64, ...)",
-      anchor: "tokenGenerators",
+      anchor: "intigerBaseConverter",
     },
-    {
-      title: "Base64 converter",
-      desc: "Convert string, files or images into a it's base64 representation.",
-      anchor: "tokenGenerators",
-    },
-    {
-      title: "Color converter",
-      desc: "Convert color between the different formats (hex, rgb, hsl and css name)",
-      anchor: "tokenGenerators",
-    },
-    {
-      title: "Case converter",
-      desc: "Change the case of a string and chose between different formats",
-      anchor: "tokenGenerators",
-    },
-    {
-      title: "Encode/decode url formatted strings",
-      desc: 'Encode to url-encoded format (also known as "percent-encoded") or decode from it.',
-      anchor: "tokenGenerators",
-    },
-    {
-      title: "Url parser",
-      desc: "Parse an url string to get all the different parts (protocol, origin, params, port, username-password, ...)",
-      anchor: "tokenGenerators",
-    },
-    {
-      title: "Url parser",
-      desc: "Parse an url string to get all the different parts (protocol, origin, params, port, username-password, ...)",
-      anchor: "tokenGenerators",
-    },
-    {
-      title: "Escape html entities",
-      desc: "Escape or unescape html entities (replace <,>, &, \" and ' to their html version)",
-      anchor: "tokenGenerators",
-    },
-    {
-      title: "Device information",
-      desc: "Get information about your current device (screen size, pixel-ratio, user agent, ...)",
-      anchor: "tokenGenerators",
-    },
-    {
-      title: "Git cheatsheet",
-      desc: "Git is a decentralized version management software. With this cheatsheet you will have a quick access to the most common git commands.",
-      anchor: "tokenGenerators",
-    },
-    {
-      title: "Random port generator",
-      desc: 'Generate random port numbers outside of the range of "known" ports (0-1023).',
-      anchor: "tokenGenerators",
-    },
-    {
-      title: "Crontab generator",
-      desc: "Validate and generate crontab and get the human readable description of the cron schedule. ",
-      anchor: "tokenGenerators",
-    },
+    // {
+    //   title: "Date Time Converter ",
+    //   desc: "Convert date and time into the various different formats",
+    //   anchor: "tokenGenerators",
+    // },
+
+    // {
+    //   title: "Base64 converter",
+    //   desc: "Convert string, files or images into a it's base64 representation.",
+    //   anchor: "tokenGenerators",
+    // },
+    // {
+    //   title: "Bcrypt",
+    //   desc: "Hash and compare text string using bcrypt. Bcrypt is a password-hashing function based on the Blowfish cipher.",
+    //   anchor: "bcrypt",
+    // },
+    // {
+    //   title: "Case converter",
+    //   desc: "Change the case of a string and chose between different formats",
+    //   anchor: "tokenGenerators",
+    // },
+    // {
+    //   title: "Encode/decode url formatted strings",
+    //   desc: 'Encode to url-encoded format (also known as "percent-encoded") or decode from it.',
+    //   anchor: "tokenGenerators",
+    // },
+    // {
+    //   title: "Url parser",
+    //   desc: "Parse an url string to get all the different parts (protocol, origin, params, port, username-password, ...)",
+    //   anchor: "tokenGenerators",
+    // },
+    // {
+    //   title: "Url parser",
+    //   desc: "Parse an url string to get all the different parts (protocol, origin, params, port, username-password, ...)",
+    //   anchor: "tokenGenerators",
+    // },
+    // {
+    //   title: "Escape html entities",
+    //   desc: "Escape or unescape html entities (replace <,>, &, \" and ' to their html version)",
+    //   anchor: "tokenGenerators",
+    // },
+    // {
+    //   title: "Device information",
+    //   desc: "Get information about your current device (screen size, pixel-ratio, user agent, ...)",
+    //   anchor: "tokenGenerators",
+    // },
+    // {
+    //   title: "Git cheatsheet",
+    //   desc: "Git is a decentralized version management software. With this cheatsheet you will have a quick access to the most common git commands.",
+    //   anchor: "tokenGenerators",
+    // },
+    // {
+    //   title: "Random port generator",
+    //   desc: 'Generate random port numbers outside of the range of "known" ports (0-1023).',
+    //   anchor: "tokenGenerators",
+    // },
+    // {
+    //   title: "Crontab generator",
+    //   desc: "Validate and generate crontab and get the human readable description of the cron schedule. ",
+    //   anchor: "tokenGenerators",
+    // },
 
   ];
   return (

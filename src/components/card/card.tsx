@@ -1,7 +1,9 @@
-import Link from 'next/link';
-import { HashtagIcon } from '@heroicons/react/solid'
-import { VariableIcon } from '@heroicons/react/solid'
-import { ShieldExclamationIcon} from '@heroicons/react/outline'
+import Link from "next/link";
+import { HashtagIcon, VariableIcon } from "@heroicons/react/solid";
+import {
+  CalculatorIcon,
+  ShieldExclamationIcon,
+} from "@heroicons/react/outline";
 
 interface CardInterface {
   title: string;
@@ -25,11 +27,19 @@ function Card({ title, desc, anchor }: CardInterface) {
                 hover:bg-gray-100 
                 hover:shadow-blue-900/50
                 dark:border-gray-700 dark:bg-gray-800"
-            >
-
-          {anchor=== 'tokenGenerator' && <VariableIcon className="h-9 w-9 text-blue-500"/>}
-          {anchor=== 'hashText' && <HashtagIcon className="h-9 w-9 text-blue-500"/>}
-          {anchor === 'uuidGenerator' && <ShieldExclamationIcon className="h-9 w-9 text-blue-500" />}
+        >
+          {anchor === "tokenGenerator" && (
+            <VariableIcon className="h-9 w-9 text-blue-500" />
+          )}
+          {anchor === "hashText" && (
+            <HashtagIcon className="h-9 w-9 text-blue-500" />
+          )}
+          {anchor === "uuidGenerator" && (
+            <ShieldExclamationIcon className="h-9 w-9 text-blue-500" />
+          )}
+          {anchor === "intigerBaseConverter" && (
+            <CalculatorIcon className="h-9 w-9 text-blue-500" />
+          )}
 
           <h5 className="mb-2 text-lg font-bold tracking-tight text-blue-600 dark:text-white">
             {title}

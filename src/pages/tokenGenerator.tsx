@@ -180,21 +180,14 @@ const tokenGeneratorComponent = () => {
               />
             </div>
 
-            <div
-              className="m-2 
-                        max-w-3xl
-                        rounded-lg 
-                        border
-                        border-gray-200
-                        bg-white 
-                        p-6 
-                        shadow-lg 
-                        dark:border-gray-700 dark:bg-gray-800"
+            <text
+              id="message"
+              values={token}
+              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Enter Text Here ..."
             >
-              <p className="mb-3 text-x font-normal text-gray-700 dark:text-gray-400">
-                {token}
-              </p>
-            </div>
+              {token}
+            </text>
           </div>
           <div className="flex justify-center">
             <button className="m-1 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
@@ -229,7 +222,6 @@ const tokenGeneratorComponent = () => {
               </svg>
               <span>Refresh</span>
             </button>
-            
           </div>
           {/* TODO : notificatoin after copied to clipboard  */}
 
