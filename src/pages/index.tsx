@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 import Card from "@/components/card/card";
 import { Meta } from "@/layouts/Meta";
 import { Main } from "@/templates/Main";
-import { AppConfig } from "@/utils/AppConfig";
+// import { AppConfig } from "@/utils/AppConfig";
 
 const Index = () => {
   const { theme, setTheme } = useTheme();

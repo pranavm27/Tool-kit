@@ -2,10 +2,8 @@ import Link from "next/link";
 
 import { Meta } from "@/layouts/Meta";
 import { Main } from "@/templates/Main";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 // import { ClipboardCopyIcon } from "@heroicons/react/solid";
-var CryptoJS = require("crypto-js");
-
 const tokenGeneratorComponent = () => {
   const generateCypherText = (item: {base : number, text: string}) => {
     return (
@@ -18,7 +16,7 @@ const tokenGeneratorComponent = () => {
           name={item.text}
           id={item.text}
           defaultValue='0'
-          onChange={(evt) => setValue(parseInt(evt.target.value.toString(10)) | 0)}
+          onChange={(evt) => setValue(parseInt(evt.target.value.toString()) | 0)}
           value={value.toString(item.base)}
           className="focus:ring-indigo-500 focus:border-blue-500 block w-full pl-20 sm:text-sm border-gray-300 rounded-md
           dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -30,7 +28,7 @@ const tokenGeneratorComponent = () => {
   const [value, setValue] = useState(10);
 
   const numberBase = [
-    { baes: 10, text: "Decimal" },
+    { base: 10, text: "Decimal" },
     { base: 8, text: "Octal" },
     { base: 16, text: "Hex" },
     { base: 2, text: "Binary" },

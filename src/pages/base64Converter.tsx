@@ -6,6 +6,7 @@ import React, { useState } from "react";
 
 var CryptoJS = require("crypto-js");
 
+
 const component = () => {
   const converToBase64 = () => {
     var base64 =  CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(value))
@@ -18,7 +19,7 @@ const component = () => {
         <textarea
           name="base64"
           id="base64"
-          rows="5"
+          rows = {5}
           value={base64}
           className="focus:ring-indigo-500 focus:border-blue-500 block w-full pl-20 sm:text-sm border-gray-300 rounded-md
           dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -40,7 +41,7 @@ const component = () => {
         <textarea
           name="text"
           id="text"
-          rows="5"
+          rows={5}
           value={plainText}
           className="focus:ring-indigo-500 focus:border-blue-500 block w-full pl-20 sm:text-sm border-gray-300 rounded-md
           dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -84,7 +85,7 @@ const component = () => {
           <div className="relative pt-1 flex flex-row">
             <textarea
               id="message"
-              rows="5"
+              rows={5}
               className="block m-3 p-2.5 w-3/5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Enter Text Here ..."
               onChange={(evt) => setValue(evt.target.value)}
@@ -101,7 +102,7 @@ const component = () => {
           <div className="  relative pt-1 flex flex-row ">
             <textarea
               id="message"
-              rows="5"
+              rows={5}
               className="block m-3 p-2.5 w-3/5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Enter Text Here ..."
               onChange={(evt) => setEncodedValue(evt.target.value)}

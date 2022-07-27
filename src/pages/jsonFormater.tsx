@@ -4,17 +4,15 @@ import { Meta } from "@/layouts/Meta";
 import { Main } from "@/templates/Main";
 import React, { useState } from "react";
 
-var CryptoJS = require("crypto-js");
-
 const component = () => {
   const formateJson = () => {
     try {
-      const formatedJSON = JSON.stringify(JSON.parse(value), null, 3);
+      const formatedJSON = JSON.stringify(JSON.parse(value.toString()), null, 3);
       return (
         <div className="relative pt-1 flex flex-row">
           <textarea
             id="message"
-            rows="15"
+            rows={15}
             className="block m-3 p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Enter Text Here ..."
             value={formatedJSON}
@@ -23,13 +21,12 @@ const component = () => {
       );
     } catch (err) {
       console.log(err);
+      return;
       //  throw new Error()
     }
   };
 
-  const [value, setValue] = useState({'hello': 'world'});
-
-  const [isInvalid, setIsIvalid] = useState(false);
+  const [value, setValue] = useState("{'hello': 'world'}");
 
   return (
     <Main meta={<Meta title="Hash Text" description="Hash Text" />}>
@@ -53,12 +50,12 @@ const component = () => {
           <div className="relative pt-1 flex flex-row">
             <textarea
               id="message"
-              rows="15"
+              rows={15}
               className="block m-3 p-2.5 w-3/5 text-sm text-gray-900  rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Enter Text Here ..."
-              onChange={(evt) => setValue((evt.target.value))}
+              onChange={(evt) => setValue(((evt.target.value).toString()))}
             >
-              {value}
+              {/* {value} */}
             </textarea>
             <div className="w-3/5 m3">{formateJson()}</div>
           </div>

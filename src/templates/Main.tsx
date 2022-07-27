@@ -1,7 +1,6 @@
 import type { ReactNode } from 'react';
 
 import SideBar from '@/components/sidebar/sidebar';
-import { AppConfig } from '@/utils/AppConfig';
 
 type IMainProps = {
   meta: ReactNode;
