@@ -76,7 +76,7 @@ const SideBar = () => {
                 <span className="mx-4 font-medium">Accounts</span>
               </a>
             </Link>
-
+{/* 
             <Link href="#">
               <a className="mt-5 flex items-center px-4 py-2 text-gray-600 transition-colors duration-200 hover:bg-gray-200 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200">
                 <svg
@@ -125,7 +125,7 @@ const SideBar = () => {
               </svg>
 
               <span className="mx-4 font-medium">Settings</span>
-            </a>
+            </a> */}
           </nav>
         </aside>
       </div>
