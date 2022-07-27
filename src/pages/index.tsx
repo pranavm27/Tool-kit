@@ -35,12 +35,21 @@ const Index = () => {
     //   desc: "Convert date and time into the various different formats",
     //   anchor: "tokenGenerators",
     // },
-
-    // {
-    //   title: "Base64 converter",
-    //   desc: "Convert string, files or images into a it's base64 representation.",
-    //   anchor: "tokenGenerators",
-    // },
+    {
+      title: "Device Info",
+      desc: "Get information about your current device (screen size, pixel-ratio, user agent",
+      anchor: "deviceInfo",
+    },
+    {
+      title: "Base64 converter",
+      desc: "Convert string, files or images into a it's base64 representation.",
+      anchor: "base64Converter",
+    },
+    {
+      title: "JSON FORMATER",
+      desc: "Prettify your JSON string to a human friendly readable format.",
+      anchor: "jsonFormater",
+    },
     // {
     //   title: "Bcrypt",
     //   desc: "Hash and compare text string using bcrypt. Bcrypt is a password-hashing function based on the Blowfish cipher.",

@@ -4,7 +4,6 @@ import { Meta } from "@/layouts/Meta";
 import { Main } from "@/templates/Main";
 import React, { useEffect, useState } from "react";
 import { v4 as uuid } from "uuid";
-import { ReplyIcon} from '@heroicons/react/outline'
 
 // import { ClipboardCopyIcon } from "@heroicons/react/solid";
 

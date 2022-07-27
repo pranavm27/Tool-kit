@@ -2,7 +2,10 @@ import Link from "next/link";
 import { HashtagIcon, VariableIcon } from "@heroicons/react/solid";
 import {
   CalculatorIcon,
+  PaperClipIcon,
   ShieldExclamationIcon,
+  DesktopComputerIcon,
+  CodeIcon
 } from "@heroicons/react/outline";
 
 interface CardInterface {
@@ -10,6 +13,7 @@ interface CardInterface {
   desc: string;
   anchor: string;
 }
+
 
 function Card({ title, desc, anchor }: CardInterface) {
   return (
@@ -39,6 +43,15 @@ function Card({ title, desc, anchor }: CardInterface) {
           )}
           {anchor === "intigerBaseConverter" && (
             <CalculatorIcon className="h-9 w-9 text-blue-500" />
+          )}
+          {anchor === "base64Converter" && (
+            <PaperClipIcon className="h-9 w-9 text-blue-500" />
+          )}
+          {anchor === "deviceInfo" && (
+            <DesktopComputerIcon className="h-9 w-9 text-blue-500" />
+          )}
+          {anchor === "jsonFormater" && (
+            <CodeIcon className="h-9 w-9 text-blue-500" />
           )}
 
           <h5 className="mb-2 text-lg font-bold tracking-tight text-blue-600 dark:text-white">
